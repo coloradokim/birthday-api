@@ -1,0 +1,29 @@
+{
+  "name": "birthday-api",
+  "version": "1.0.0",
+  "description": "an api to keep track of teammate's birthdays and preferences for celebrating",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coloradokim/birthday-api.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "CRUD-api"
+  ],
+  "author": "kim schlesinger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coloradokim/birthday-api/issues"
+  },
+  "homepage": "https://github.com/coloradokim/birthday-api#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "knex": "^0.13.0",
+    "pg": "^6.4.0"
+  }
+}
