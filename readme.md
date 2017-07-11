@@ -5,4 +5,4 @@
 
 ## ERD
 
-![erd](images/birthday_erd.png)
+![erd](images/team_erd.png)
