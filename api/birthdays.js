@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const queries = ('../db/queries');
+const queries = require('../db/queries');
 
 router.get('/', (req, res) => {
-  queries.getAll().then(birthdays => {
-    res.json({message:'hi!'})
-  })
-})
+  queries.getAll().then(teammates => {
+    res.json(teammates)
+  });
+});
+
+module.exports = router;

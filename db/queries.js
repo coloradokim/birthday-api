@@ -1,19 +1,16 @@
-const knex = require('./knex'); // the connection!
+const knex = require('./knex');
 
 module.exports = {
   getAll() {
     return knex('teammate');
   },
-  // getOne(id) {
-  //   return knex('sticker').where('id', id).first();
-  // },
-  // create(sticker) {
-  //   return knex('sticker').insert(sticker, '*');
-  // },
-  // update(id, sticker) {
-  //   return knex('sticker').where('id', id).update(sticker, '*');
-  // },
-  // delete(id) {
-  //   return knex('sticker').where('id', id).del();
-  // }
+  getOneClient(id) {
+    return knex('clients').where('id', id).first();
+  },
+  createClient(newClient) {
+    return knex('clients').insert(newClient, '*');
+  },
+  deleteClient(id) {
+    return knex('clients').where('id', id).del();
+  }
 };
