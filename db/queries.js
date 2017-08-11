@@ -4,13 +4,13 @@ module.exports = {
   getAll() {
     return knex('teammate');
   },
-  getOneClient(id) {
-    return knex('clients').where('id', id).first();
+  getOne(id) {
+    return knex('teammate').where('id', id).first();
   },
-  createClient(newClient) {
-    return knex('clients').insert(newClient, '*');
+  createTeammate(newTeammate) {
+    return knex('teammate').insert(newTeammate, '*');
   },
-  deleteClient(id) {
-    return knex('clients').where('id', id).del();
+  deleteOne(id) {
+    return knex('teammate').where('id', id).del();
   }
 };
